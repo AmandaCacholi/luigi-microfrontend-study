@@ -2,9 +2,16 @@
   "name": "@org/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start": "npx nx run-many --parallel --target=serve --all --maxParallel=100"
+  },
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
+    "@luigi-project/client": "^2.9.0",
+    "@luigi-project/container": "^1.2.0-rc1",
+    "@mui/material": "^5.15.14",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },

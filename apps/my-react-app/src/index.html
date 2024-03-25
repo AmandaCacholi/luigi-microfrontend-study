@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello Luigi</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@luigi-project/core/luigi.css"
+    />
+    <meta charset="utf-8" />
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <script src="https://unpkg.com/@luigi-project/core/luigi.js"></script>
+    <script>
+      Luigi.setConfig({
+        navigation: {
+          nodes: [
+            {
+              pathSegment: 'home',
+              children: [
+                {
+                  pathSegment: 'home',
+                  label: 'Home 3000',
+                  viewUrl: '/app/host-home.html',
+                },
+                {
+                  pathSegment: 'hello2',
+                  label: '3002',
+                  viewUrl: 'http://localhost:3002',
+                },
+                // {
+                //   pathSegment: 'hello3',
+                //   label: '3004',
+                //   viewUrl: 'http://localhost:3004',
+                // },
+                // {
+                //   pathSegment: 'hello4',
+                //   label: '3006',
+                //   viewUrl: 'http://localhost:3006',
+                // },
+              ],
+            },
+          ],
+        },
+        routing: {
+          useHashRouting: true,
+        },
+        settings: {
+          responsiveNavigation: 'semiCollapsible',
+          header: {
+            title: 'Hello Luigi',
+            logo: 'https://fiddle.luigi-project.io/img/luigi.png',
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
